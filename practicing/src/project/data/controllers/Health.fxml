@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.data.controllers.HealthController">
+   <children>
+      <Pane layoutX="187.0" layoutY="28.0" prefHeight="18.0" prefWidth="103.0" style="-fx-background-color: #ffffff;" />
+      <AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="84.0">
+         <children>
+            <Circle fill="WHITE" layoutX="42.0" layoutY="37.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+            <Label fx:id="BloodGroup" layoutX="29.0" layoutY="23.0" text="B+" textFill="#002451">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="37.0" layoutY="549.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+            <ImageView fx:id="close" fitHeight="27.0" fitWidth="29.0" layoutX="23.0" layoutY="536.0" onMouseClicked="#on_Closed_Clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/CLose.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="back" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#goBack" prefHeight="37.0" prefWidth="103.0" styleClass="Btn-color" stylesheets="@style.css" text="Health">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="237.0" layoutY="18.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="103.0" styleClass="Btn-color" stylesheets="@style.css" text="Heart">
+         <font>
+            <Font name="Poppins Medium" size="12.0" />
+         </font>
+      </Button>
+      <Circle fill="#0067ff" layoutX="261.0" layoutY="37.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="132.0" layoutY="111.0" prefHeight="43.0" prefWidth="177.0" text="Overview">
+         <font>
+            <Font name="Poppins Medium" size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="520.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heart">
+         <font>
+            <Font name="Poppins SemiBold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="584.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfomane">
+         <font>
+            <Font name="Poppins Light" size="19.0" />
+         </font>
+      </Text>
+      <Label layoutX="131.0" layoutY="150.0" prefHeight="38.0" prefWidth="209.0" text="Conditions">
+         <font>
+            <Font name="Poppins Medium" size="30.0" />
+         </font>
+      </Label>
+      <Circle fill="#ffffff69" layoutX="275.0" layoutY="378.0" radius="150.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="275.0" layoutY="378.0" radius="125.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="356.0" layoutY="477.0" radius="4.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ImageView fitHeight="276.0" fitWidth="280.0" layoutX="137.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/heart.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#ffffff69" layoutX="309.0" layoutY="335.0" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="309.0" layoutY="335.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#ffffff69" layoutX="286.0" layoutY="415.0" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="286.0" layoutY="415.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#ffffff69" layoutX="320.0" layoutY="476.0" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="320.0" layoutY="476.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#ffffff69" layoutX="236.0" layoutY="335.0" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="236.0" layoutY="335.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#ffffff69" layoutX="244.0" layoutY="445.0" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="WHITE" layoutX="244.0" layoutY="445.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <AnchorPane fx:id="lung001" layoutX="473.0" layoutY="385.0" prefHeight="175.0" prefWidth="177.0" styleClass="Btn-color" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="139.0" layoutX="24.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/lungs_no_color.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="lungs01" layoutX="6.0" layoutY="118.0" mnemonicParsing="false" onAction="#lungsButton" opacity="0.8" prefHeight="43.0" prefWidth="156.0" styleClass="Btn01-color" stylesheets="@style.css" text="Lungs     " visible="false">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="lung1" layoutX="118.0" layoutY="118.0" prefHeight="43.0" prefWidth="43.0" styleClass="Btn001-color" stylesheets="@style.css" visible="false">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="9.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@../imgs/arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="brain001" layoutX="886.0" layoutY="384.0" prefHeight="175.0" prefWidth="177.0" styleClass="Btn-color" stylesheets="@style.css">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="150.0" fitWidth="139.0" layoutX="19.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/brain_no_color.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="brain01" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onAction="#brainButton" opacity="0.8" prefHeight="43.0" prefWidth="150.0" styleClass="Btn01-color" stylesheets="@style.css" text="Brain     " visible="false">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="brain1" layoutX="121.0" layoutY="118.0" prefHeight="43.0" prefWidth="43.0" styleClass="Btn001-color" stylesheets="@style.css" visible="false">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="9.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@../imgs/arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="heart001" layoutX="670.0" layoutY="385.0" prefHeight="175.0" prefWidth="199.0" styleClass="Btn-color" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-7.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="27.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/heart.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="heart01" layoutX="13.0" layoutY="118.0" mnemonicParsing="false" onAction="#heartButton" opacity="0.8" prefHeight="43.0" prefWidth="177.0" styleClass="Btn01-color" stylesheets="@style.css" text="Heart   " visible="false">
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="heart1" layoutX="145.0" layoutY="117.0" prefHeight="43.0" prefWidth="43.0" styleClass="Btn001-color" stylesheets="@style.css" visible="false">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+                     <image>
+                        <Image url="@../imgs/arrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Text layoutX="611.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conditions">
+         <font>
+            <Font name="Poppins Light" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="520.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Body">
+         <font>
+            <Font name="Poppins SemiBold" size="19.0" />
+         </font>
+      </Text>
+      <Circle fill="#0067ff" layoutX="505.0" layoutY="346.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <AnchorPane layoutX="96.0" layoutY="438.0" prefHeight="111.0" prefWidth="205.0" style="-fx-background-color: transparent;" styleClass="Btn-color" stylesheets="@style.css">
+         <children>
+            <Text layoutX="59.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heart Score">
+               <font>
+                  <Font name="Poppins Light" size="19.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="26.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/heartlogo.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="HeartScoreV" fill="#0067ea" layoutX="80.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120" textAlignment="CENTER" wrappingWidth="46.0">
+               <font>
+                  <Font name="Poppins SemiBold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="421.0" layoutY="132.0" prefHeight="175.0" prefWidth="650.0">
+         <children>
+            <AnchorPane layoutX="1.0" prefHeight="136.0" prefWidth="209.0" style="-fx-background-color: transparent;" styleClass="Btn-color" stylesheets="@style.css">
+               <children>
+                  <Text layoutX="59.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heart Rate">
+                     <font>
+                        <Font name="Poppins Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="59.0" fitWidth="199.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/heartbeat.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="26.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/heartlogo.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="151.0" layoutY="52.0" prefHeight="80.0" prefWidth="50.0" styleClass="Btn02-color" stylesheets="@style.css">
+                     <children>
+                        <Text fx:id="HRV" fill="WHITE" layoutX="2.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120" textAlignment="CENTER" wrappingWidth="46.0">
+                           <font>
+                              <Font name="Poppins SemiBold" size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="2.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bpm" textAlignment="CENTER" wrappingWidth="46.0">
+                           <font>
+                              <Font name="Poppins SemiBold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="HRC" layoutX="22.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conditions">
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="227.0" layoutY="1.0" prefHeight="136.0" prefWidth="207.0" style="-fx-background-color: transparent;" styleClass="Btn-color" stylesheets="@style.css">
+               <children>
+                  <Text layoutX="45.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cholesterol level">
+                     <font>
+                        <Font name="Poppins Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="5.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/blood.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="151.0" layoutY="52.0" prefHeight="80.0" prefWidth="50.0" styleClass="Btn0002-color" stylesheets="@style.css">
+                     <children>
+                        <Text fx:id="CLV" fill="#0067ea" layoutX="2.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120" textAlignment="CENTER" wrappingWidth="46.0">
+                           <font>
+                              <Font name="Poppins SemiBold" size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#0067ea" layoutX="2.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mg/dl" textAlignment="CENTER" wrappingWidth="46.0">
+                           <font>
+                              <Font name="Poppins SemiBold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="97.0" fitWidth="156.0" layoutX="11.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/chlostrol_chart.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="CLC" layoutX="20.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conditions">
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="451.0" layoutY="1.0" prefHeight="139.0" prefWidth="207.0" style="-fx-background-color: transparent;" styleClass="Btn-color" stylesheets="@style.css">
+               <children>
+                  <Text layoutX="47.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Pressure">
+                     <font>
+                        <Font name="Poppins Light" size="19.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/physicalActivity.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="151.0" layoutY="52.0" prefHeight="80.0" prefWidth="50.0" styleClass="Btn002-color" stylesheets="@style.css">
+                     <children>
+                        <Text fx:id="BPV" fill="WHITE" layoutX="2.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="120" textAlignment="CENTER" wrappingWidth="46.0">
+                           <font>
+                              <Font name="Poppins SemiBold" size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="2.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mmHg" textAlignment="CENTER" wrappingWidth="46.0">
+                           <font>
+                              <Font name="Poppins SemiBold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Pane layoutX="19.0" layoutY="64.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="29.0" layoutY="74.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="39.0" layoutY="64.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="49.0" layoutY="74.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="59.0" layoutY="64.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="69.0" layoutY="74.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="79.0" layoutY="83.0" prefHeight="27.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="89.0" layoutY="94.0" prefHeight="20.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="99.0" layoutY="64.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="109.0" layoutY="74.0" prefHeight="27.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="89.0" layoutY="67.0" prefHeight="20.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="119.0" layoutY="92.0" prefHeight="17.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="109.0" layoutY="105.0" prefHeight="10.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="129.0" layoutY="74.0" prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="139.0" layoutY="81.0" prefHeight="18.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Pane layoutX="119.0" layoutY="68.0" prefHeight="20.0" prefWidth="3.0" style="-fx-background-color: #f11224;" />
+                  <Text fx:id="BPC" layoutX="20.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conditions">
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Circle fill="#0067ff" layoutX="505.0" layoutY="92.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <AnchorPane layoutX="943.0" layoutY="13.0" prefHeight="56.0" prefWidth="84.0">
+         <children>
+            <Circle fill="WHITE" layoutX="37.0" layoutY="28.0" radius="19.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3.0" />
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/ic_add_black.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="1011.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create">
+         <font>
+            <Font name="Poppins Light" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

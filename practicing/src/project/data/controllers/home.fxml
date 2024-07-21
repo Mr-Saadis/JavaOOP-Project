@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.data.controllers.HomeController">
+   <children>
+      <Pane layoutX="543.0" layoutY="243.0" prefHeight="2.0" prefWidth="559.0" style="-fx-background-color: #e0e0e0;" />
+      <Pane layoutX="542.0" prefHeight="600.0" prefWidth="2.0" style="-fx-background-color: #e0e0e0;" />
+      <AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="84.0">
+         <children>
+            <Circle fill="WHITE" layoutX="42.0" layoutY="37.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+            <Label fx:id="bloodgroup" layoutX="29.0" layoutY="23.0" text="B+" textFill="#002451">
+               <font>
+                  <Font name="Poppins SemiBold" size="20.0" />
+               </font>
+            </Label>
+            <Circle fx:id="close" fill="WHITE" layoutX="43.0" layoutY="553.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+            <ImageView fx:id="close1" fitHeight="27.0" fitWidth="29.0" layoutX="29.0" layoutY="540.0" onMouseClicked="#on_Closed_Clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/CLose.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="133.0" layoutY="18.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="103.0" styleClass="Btn-color" stylesheets="@style.css" text="Health">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deitBtn" layoutX="157.0" layoutY="286.0" mnemonicParsing="false" onAction="#onClickDeit" prefHeight="264.0" prefWidth="137.0" stylesheets="@style.css">
+         <styleClass>
+            <String fx:value="Btn2-color" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button fx:id="healthBtn" layoutX="349.0" layoutY="211.0" mnemonicParsing="false" onAction="#onCLickHealth" prefHeight="264.0" prefWidth="137.0" stylesheets="@style.css">
+         <styleClass>
+            <String fx:value="Btn1-color" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Label layoutX="132.0" layoutY="115.0" prefHeight="38.0" prefWidth="124.0" text="Welcome">
+         <font>
+            <Font name="Poppins Light" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="265.0" layoutY="115.0" prefHeight="38.0" prefWidth="285.0" text="Saad S." textFill="#0067ea">
+         <font>
+            <Font name="Poppins SemiBold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="157.0" layoutY="499.0" prefHeight="0.0" prefWidth="137.0" />
+      <Separator layoutX="349.0" layoutY="428.0" prefHeight="0.0" prefWidth="137.0" />
+      <Label layoutX="174.0" layoutY="336.0" text="Deit" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="256.0" text="Health">
+         <font>
+            <Font name="Poppins SemiBold" size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="802.0" prefHeight="245.0" prefWidth="2.0" style="-fx-background-color: #e0e0e0;" />
+      <Label layoutX="180.0" layoutY="387.0" text="BMR" textFill="WHITE">
+         <font>
+            <Font name="Poppins Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="414.0" text="Planner" textFill="WHITE">
+         <font>
+            <Font name="Poppins Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="441.0" text="Calories" textFill="WHITE">
+         <font>
+            <Font name="Poppins Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="305.0" text="Heart">
+         <font>
+            <Font name="Poppins Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="331.0" text="Lungs">
+         <font>
+            <Font name="Poppins Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="360.0" text="Brain">
+         <font>
+            <Font name="Poppins Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="440.0" text="See Details">
+         <font>
+            <Font name="Poppins Light" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="513.0" text="See Details" textFill="WHITE">
+         <font>
+            <Font name="Poppins Light" size="12.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="barChart" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="638.0" layoutY="300.0" prefHeight="275.0" prefWidth="368.0" style="-fx-background-color: #efefef;" stylesheets="@style.css" verticalGridLinesVisible="false" verticalZeroLineVisible="false" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT">
+               <tickLabelFont>
+                  <Font name="Poppins Light" size="8.0" />
+               </tickLabelFont>
+            </NumberAxis>
+        </yAxis>
+         <styleClass>
+            <String fx:value="series0" />
+            <String fx:value="series1" />
+            <String fx:value="series2" />
+         </styleClass>
+      </BarChart>
+      <PieChart fx:id="pieChart" layoutX="818.0" layoutY="17.0" prefHeight="212.0" prefWidth="265.0" stylesheets="@style.css">
+         <styleClass>
+            <String fx:value="data0" />
+            <String fx:value="data1" />
+            <String fx:value="data2" />
+            <String fx:value="data3" />
+            <String fx:value="chart-series-pie" />
+         </styleClass>
+      </PieChart>
+      <Text layoutX="569.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Health">
+         <font>
+            <Font name="Poppins SemiBold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="569.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfomane">
+         <font>
+            <Font name="Poppins Light" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalHealth" fill="#0067ea" layoutX="547.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="84%" textAlignment="CENTER" wrappingWidth="255.76000213623047">
+         <font>
+            <Font name="Poppins SemiBold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#f11224" layoutX="593.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal" textAlignment="CENTER" wrappingWidth="166.1999969482422">
+         <font>
+            <Font name="Poppins Medium" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="569.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diet">
+         <font>
+            <Font name="Poppins SemiBold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="622.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfomane">
+         <font>
+            <Font name="Poppins Light" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create and monitor Healthy">
+         <font>
+            <Font name="Poppins Light" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="133.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Habits with us.">
+         <font>
+            <Font name="Poppins Light" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="569.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your BMI">
+         <font>
+            <Font name="Poppins Medium" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="804.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your BMR">
+         <font>
+            <Font name="Poppins Medium" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="575.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Body Fats">
+         <font>
+            <Font name="Poppins Medium" size="16.0" />
+         </font>
+      </Text>
+      <Circle fill="#0067ea" layoutX="676.0" layoutY="407.0" radius="62.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+      <Circle fill="#f11224" layoutX="951.0" layoutY="407.0" radius="62.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+      <Text fx:id="BMI_Text" fill="WHITE" layoutX="616.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17" textAlignment="CENTER" wrappingWidth="118.421989440918">
+         <font>
+            <Font name="Poppins SemiBold" size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="BMR_Text" fill="WHITE" layoutX="892.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="231" textAlignment="CENTER" wrappingWidth="118.42198944091797">
+         <font>
+            <Font name="Poppins SemiBold" size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="Fats_Text" fill="#f11224" layoutX="645.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="84%">
+         <font>
+            <Font name="Poppins SemiBold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="802.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calories to Maintain Health">
+         <font>
+            <Font name="Poppins Medium" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Calories_Text" fill="#f11224" layoutX="920.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="84%">
+         <font>
+            <Font name="Poppins SemiBold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

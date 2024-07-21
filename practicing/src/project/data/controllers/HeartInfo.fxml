@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" cache="true" cacheHint="SCALE_AND_ROTATE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.data.controllers.HeartInfoController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="366.0" style="-fx-background-color: #f11224;">
+         <children>
+            <ImageView fitHeight="240.0" fitWidth="249.0" layoutX="63.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/heart_no_color.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="90.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heart Details">
+               <font>
+                  <Font name="Poppins SemiBold" size="25.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <Button fx:id="Confirm_btn" layoutX="885.0" layoutY="525.0" mnemonicParsing="false" onAction="#On_Click_Button" prefHeight="35.0" prefWidth="161.0" styleClass="Btn002-color" stylesheets="@style.css" text="Next" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#f11224" layoutX="476.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Pressure">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="516.0" layoutY="104.0" prefHeight="111.0" prefWidth="205.0" styleClass="redboader-tranparent-fill" stylesheets="@style.css">
+         <children>
+            <Text fill="#f11224" layoutX="67.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Systolic ">
+               <font>
+                  <Font name="Poppins Light" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SYS" alignment="CENTER" layoutX="57.0" layoutY="45.0" prefHeight="42.0" prefWidth="90.0" promptText="mmHg" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins SemiBold" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="800.0" layoutY="104.0" prefHeight="111.0" prefWidth="205.0" styleClass="redboader-tranparent-fill" stylesheets="@style.css">
+         <children>
+            <Text fill="#f11224" layoutX="67.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diastolic ">
+               <font>
+                  <Font name="Poppins Light" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="DYS" alignment="CENTER" layoutX="58.0" layoutY="45.0" prefHeight="42.0" prefWidth="90.0" promptText="mmHg" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins SemiBold" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Text fill="#f11224" layoutX="476.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resting Heart Rate">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="HB" layoutX="524.0" layoutY="307.0" prefHeight="15.0" prefWidth="175.0" promptText="BPM" styleClass="transparent" stylesheets="@style.css">
+         <font>
+            <Font name="Poppins Light" size="14.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="534.0" layoutY="338.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #f11224;" />
+      <AnchorPane layoutX="773.0" layoutY="256.0" prefHeight="76.0" prefWidth="280.0">
+         <children>
+            <Text fill="#f11224" layoutX="-3.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cholestrol Level">
+               <font>
+                  <Font name="Poppins Medium" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CholestrolLevel" layoutX="36.0" layoutY="50.0" prefHeight="15.0" prefWidth="175.0" promptText="mg/dL" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="14.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="46.0" layoutY="81.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #f11224;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="476.0" layoutY="394.0" prefHeight="35.0" prefWidth="230.0">
+         <children>
+            <Text fill="#f11224" layoutX="-2.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Physical Activity">
+               <font>
+                  <Font name="Poppins Medium" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="back" layoutX="754.0" layoutY="525.0" mnemonicParsing="false" onAction="#On_CLick_Back" prefHeight="35.0" prefWidth="118.0" styleClass="Btn0002-color" stylesheets="@style.css" text="Back" textFill="#515151">
+         <font>
+            <Font name="Poppins SemiBold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="PhysicalActivity" layoutX="525.0" layoutY="436.0" prefHeight="15.0" prefWidth="175.0" promptText="minutes per week" styleClass="transparent" stylesheets="@style.css">
+         <font>
+            <Font name="Poppins Light" size="14.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="535.0" layoutY="467.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #f11224;" />
+      <AnchorPane layoutX="773.0" layoutY="386.0" prefHeight="76.0" prefWidth="280.0">
+         <children>
+            <Text fill="#f11224" layoutX="-3.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Group">
+               <font>
+                  <Font name="Poppins Medium" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="BloodGroup" layoutX="36.0" layoutY="50.0" prefHeight="15.0" prefWidth="175.0" promptText="A+/B+..." styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="14.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="46.0" layoutY="81.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #f11224;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

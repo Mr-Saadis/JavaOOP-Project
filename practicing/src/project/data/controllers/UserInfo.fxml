@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" cache="true" cacheHint="SCALE_AND_ROTATE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.data.controllers.UserInfoController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="366.0" style="-fx-background-color: #0067ea;">
+         <children>
+            <Text fill="WHITE" layoutX="60.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER INFORMATION">
+               <font>
+                  <Font name="Poppins SemiBold" size="25.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/New%20Project%206%20%5B855C91B%5D.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="144.0" fitWidth="152.0" layoutX="167.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/New%20Project%206%20%5BF6977C3%5D.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="448.0" layoutY="115.0" prefHeight="49.0" prefWidth="366.0">
+         <children>
+            <Text fill="#0067ea" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="8.0" layoutY="62.0" prefHeight="1.0" prefWidth="356.0" style="-fx-background-color: #0067ea;" />
+            <TextField fx:id="firstName" layoutY="34.0" prefHeight="25.0" prefWidth="366.0" promptText="Enter Your First Name" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="447.0" layoutY="201.0" prefHeight="49.0" prefWidth="366.0">
+         <children>
+            <Text fill="#0067ea" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="8.0" layoutY="62.0" prefHeight="1.0" prefWidth="356.0" style="-fx-background-color: #0067ea;" />
+            <TextField fx:id="lastName" layoutY="34.0" prefHeight="25.0" prefWidth="366.0" promptText="Enter Your Last Name" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="448.0" layoutY="294.0" prefHeight="63.0" prefWidth="156.0">
+         <children>
+            <Text fill="#0067ea" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="8.0" layoutY="62.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #0067ea;" />
+            <TextField fx:id="gender" layoutY="34.0" prefHeight="25.0" prefWidth="175.0" promptText="Enter Your Gender" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="448.0" layoutY="388.0" prefHeight="63.0" prefWidth="156.0">
+         <children>
+            <Text fill="#0067ea" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="8.0" layoutY="62.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #0067ea;" />
+            <TextField fx:id="weight" layoutY="34.0" prefHeight="25.0" prefWidth="175.0" promptText="Enter Your Weight / kg" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="638.0" layoutY="294.0" prefHeight="63.0" prefWidth="156.0">
+         <children>
+            <Text fill="#0067ea" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="8.0" layoutY="62.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #0067ea;" />
+            <TextField fx:id="age" accessibleRole="DIALOG" layoutY="34.0" prefHeight="25.0" prefWidth="175.0" promptText="Enter Your Age" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="638.0" layoutY="388.0" prefHeight="63.0" prefWidth="156.0">
+         <children>
+            <Text fill="#0067ea" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height">
+               <font>
+                  <Font name="Poppins Medium" size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="8.0" layoutY="62.0" prefHeight="1.0" prefWidth="167.0" style="-fx-background-color: #0067ea;" />
+            <TextField fx:id="height" layoutY="34.0" prefHeight="25.0" prefWidth="175.0" promptText="Enter Your Height / cm" styleClass="transparent" stylesheets="@style.css">
+               <font>
+                  <Font name="Poppins Light" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Confirm_btn" layoutX="885.0" layoutY="525.0" mnemonicParsing="false" onAction="#on_CLick_Confirm" prefHeight="35.0" prefWidth="161.0" styleClass="Btn02-color" stylesheets="@style.css" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

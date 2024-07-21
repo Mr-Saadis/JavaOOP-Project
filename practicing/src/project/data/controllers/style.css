@@ -1,0 +1,127 @@
+.Btn-color{
+    -fx-border-radius: 25;
+    -fx-background-color: #efefef;
+    -fx-background-radius: 25 25 25 25;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 3;
+}
+
+.redboader-tranparent-fill{
+    -fx-border-radius:25;
+    -fx-background-color: transparent;
+    -fx-background-radius: 25 25 25 25;
+    -fx-border-color: #f11224;
+    -fx-border-width: 3;
+}
+
+
+.Btn01-color{
+    -fx-border-radius:15;
+    -fx-background-color:#efefef;
+    -fx-background-radius: 15 15 15 15;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 3;
+}
+
+.Btn001-color{
+    -fx-border-radius:14;
+    -fx-background-color:#0067ea;
+    -fx-background-radius: 15 15 15 15;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2;
+}
+
+
+/* styles.css */
+.chart-bar {
+    -fx-bar-fill: #efefef;
+}
+
+.series0.chart-bar {
+    -fx-bar-fill: #0067ea;
+}
+
+.series1.chart-bar {
+    -fx-bar-fill: #f11224;
+}
+
+.series2.chart-bar {
+    -fx-bar-fill: #e0e0e0;
+}
+
+/* ///////// */
+/* styles.css */
+.chart-series-pie {
+    -fx-pie-color: transparent;
+}
+
+.data0.chart-pie {
+    -fx-pie-color: #0067ea; /* Custom color for strength (Tomato) */
+}
+
+.data1.chart-pie {
+    -fx-pie-color: #f11224; /* Custom color for endurance (SteelBlue) */
+}
+
+.data2.chart-pie {
+    -fx-pie-color: #efefef; /* Custom color for flexibility (LimeGreen) */
+}
+
+.data3.chart-pie {
+    -fx-pie-color: #e0e0e0; /* Custom color for balance (Gold) */
+}
+
+
+/* ///////// */
+
+.Btn1-color{
+    -fx-border-radius:40;
+    -fx-background-color:#ffffff;
+    -fx-background-radius:  40 40 40 40;
+    -fx-border-color: #ffffff;
+}
+
+.Btn2-color{
+    -fx-border-radius:40;
+    -fx-background-color:#0067ea;
+    -fx-background-radius:  40 40 40 40;
+    -fx-border-color: #0067ff;
+}
+
+.Btn02-color{
+    -fx-border-radius:20;
+    -fx-background-color:#0067ea;
+    -fx-background-radius:  20 20 20 20;
+    -fx-border-color: #0067ff;
+}
+.Btn002-color{
+    -fx-border-radius:20;
+    -fx-background-color:#f11224;
+    -fx-background-radius:  20 20 20 20;
+    -fx-border-color: #f11224;
+}
+.Btn0002-color{
+    -fx-border-radius:20;
+    -fx-background-color:#e0e0e0;
+    -fx-background-radius:  20 20 20 20;
+    -fx-border-color: #e0e0e0;
+}
+
+.button-color{
+    -fx-background-color:#c07937;
+    -fx-background-radius: 30;
+}
+.transparent{
+    -fx-background-color : rgba(0,0,0,0);
+}
+.layout{
+    -fx-background-radius: 0 0 50 0;
+    -fx-background-color: #eeeeee;
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(224, 224, 224, 1),10.0,0.0,1,2);
+}
+
+.tintable-image1{
+    -fx-effect : dropshadow(gaussian,derive(#0067ea,-20%),0,0,0,0);
+}
